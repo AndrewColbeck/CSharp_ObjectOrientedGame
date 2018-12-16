@@ -2,17 +2,17 @@
 // This Class will use NUnit testing on the IdentifiableObject class to
 // assist in the locating of potential bugs and anomalies
 
-using System;
 using NUnit.Framework;
 
-namespace SwinAdventure {
-    // --------------------
+namespace SwinAdventure 
+{
     // UNIT TESTS:
-    // --------------------
     [TestFixture]
-    public class TestIdentifiableObject {
+    public class TestIdentifiableObject 
+    {
         [Test] // Whether AreYou Method is returning TRUE for positive match
-        public void TestAreYou() {
+        public void TestAreYou() 
+        {
             IdentifiableObject testIdentifiableObject = new IdentifiableObject(new string[] { "fred", "bob" });
             bool actual = testIdentifiableObject.AreYou("fred");
             bool expected = true;
@@ -20,7 +20,8 @@ namespace SwinAdventure {
         }
 
         [Test] // Whether AreYou Method is returning FALSE for negative match
-        public void TestAreYouNot() {
+        public void TestAreYouNot() 
+        {
             IdentifiableObject testIdentifiableObject = new IdentifiableObject(new string[] { "fred", "bob" });
             bool actual = testIdentifiableObject.AreYou("andrew");
             bool expected = false;
@@ -28,7 +29,8 @@ namespace SwinAdventure {
         }
     
         [Test] // Whether AreYou Method is ignoring casing when comparing identifiers 
-        public void TestAreYouCaseSensitive() {
+        public void TestAreYouCaseSensitive() 
+        {
             IdentifiableObject testIdentifiableObject = new IdentifiableObject(new string[] { "fred", "bob" });
             bool actual = testIdentifiableObject.AreYou("fReD");
             bool expected = true;
@@ -36,15 +38,17 @@ namespace SwinAdventure {
         }
     
         [Test] // Whether FirstId method is returning first identifier in list
-        public void FirstIdGetTest() {
+        public void FirstIdGetTest() 
+        {
             IdentifiableObject testIdentifiableObject = new IdentifiableObject(new string[] { "fred", "bob" });
-            string actual = testIdentifiableObject.FirstId;
+            string actual = testIdentifiableObject.Firstid;
             string expected = "fred";
             Assert.AreEqual(expected, actual, "FirstId is not returning the correct value.");
         }
 
         [Test] // Whether AddId will add passed identifier to the list
-        public void AddIdentifierTest() {
+        public void AddIdentifierTest() 
+        {
             IdentifiableObject testIdentifiableObject = new IdentifiableObject(new string[] { "fred", "bob" });
             testIdentifiableObject.AddIdentifier("james");
             bool actual = testIdentifiableObject.AreYou("james");

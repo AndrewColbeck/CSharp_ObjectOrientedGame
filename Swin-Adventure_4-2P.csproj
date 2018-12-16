@@ -37,6 +37,13 @@
     </Compile>
     <Compile Include="IdentifiableObject.cs" />
     <Compile Include="TestIdentifiableObject.cs" />
+    <Compile Include="GameObject.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="TestItem.cs" />
+    <Compile Include="TestPlayer.cs" />
+    <Compile Include="TestInventory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
