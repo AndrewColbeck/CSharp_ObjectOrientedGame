@@ -1,4 +1,4 @@
-﻿// Title:			SwinAdventure_4-2P - Player.cs
+﻿// Title:			SwinAdventure_5-1C - Player.cs
 // Author:			Andrew Colbeck © 2018, all rights reserved.
 // Version:			1.0
 // Description:		Player is a Sub-Class of GameObject, and holds an inventory 
@@ -7,7 +7,7 @@
 
 namespace SwinAdventure
 {
-    public class Player : GameObject
+    public class Player : GameObject, IHaveInventory
     {
         // LOCAL VARIABLES:
         Inventory _inventory = new Inventory();
@@ -40,7 +40,7 @@ namespace SwinAdventure
         {
             get
             {    
-                return "You are carrying: " + Inventory.ItemList;
+                return "You are carrying\n" + Inventory.ItemList;
             }
         }    
 	}

@@ -1,4 +1,4 @@
-﻿// Title:			4-2P - TestPlayer.cs
+﻿// Title:			5-1C - TestPlayer.cs
 // Author:			Andrew Colbeck © 2018, all rights reserved.
 // Version:			1.0
 // Description:		Unit Tests for Player class in Swinadventure 
@@ -73,7 +73,7 @@ namespace SwinAdventure
             testPlayer.Inventory.Put(testItem);
 
             string actual = testPlayer.FullDescription;
-            string expected = "You are carrying: \ta shovel (shovel)\n";
+            string expected = "You are carrying\n\ta shovel (shovel)\n";
             Assert.AreEqual(expected, actual, "Full description not returning correct phrase.");
         }
     }

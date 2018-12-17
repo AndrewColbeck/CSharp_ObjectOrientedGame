@@ -1,9 +1,0 @@
-/OneDrive/_Swinburne/_Degree/OOP/Swin-Adventure/obj/Debug/Swin-Adventure.csprojResolveAssemblyReference.cache
-/OneDrive/_Swinburne/_Degree/OOP/Swin-Adventure/obj/Debug/Swin-Adventure.csproj.CoreCompileInputs.cache
-/OneDrive/_Swinburne/_Degree/OOP/Swin-Adventure/bin/Debug/Swin-Adventure.dll
-/OneDrive/_Swinburne/_Degree/OOP/Swin-Adventure/bin/Debug/Swin-Adventure.pdb
-/OneDrive/_Swinburne/_Degree/OOP/Swin-Adventure/bin/Debug/nunit.framework.dll
-/OneDrive/_Swinburne/_Degree/OOP/Swin-Adventure/bin/Debug/nunit.framework.xml
-/OneDrive/_Swinburne/_Degree/OOP/Swin-Adventure/obj/Debug/Swin-Adventure.dll
-/OneDrive/_Swinburne/_Degree/OOP/Swin-Adventure/obj/Debug/Swin-Adventure.pdb
-/OneDrive/_Swinburne/_Degree/OOP/Swin-Adventure/bin/Debug/nunit.framework.pdb

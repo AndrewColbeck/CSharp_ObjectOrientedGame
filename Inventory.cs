@@ -1,4 +1,4 @@
-﻿// Title:			SwinAdventure_4-2P - Inventory.cs
+﻿// Title:			SwinAdventure_5-1C - Inventory.cs
 // Author:			Andrew Colbeck © 2018, all rights reserved.
 // Version:			1.0
 // Description:		Inventory is a sub-class of GameObject, used to store items 
@@ -71,7 +71,7 @@ namespace SwinAdventure
         {
             foreach (Item itm in _items)
             {
-                if (itm.Name == id)
+                if (itm.Firstid == id)
                 {
                     return itm;
                 }

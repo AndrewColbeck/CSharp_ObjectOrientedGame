@@ -1,4 +1,4 @@
-﻿// Title:			SwinAdventure_4-2P - Item.cs
+﻿// Title:			SwinAdventure_5-1C - Item.cs
 // Author:			Andrew Colbeck © 2018, all rights reserved.
 // Version:			1.0
 // Description:		Sub-Class of GameObject, used to represent any Item

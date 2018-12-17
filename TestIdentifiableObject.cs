@@ -1,4 +1,4 @@
-﻿// Task 2.2P - TestIdentifiableObject class by Andrew Colbeck © 2018, all rights reserved.
+﻿// Task 5-1C - TestIdentifiableObject class by Andrew Colbeck © 2018, all rights reserved.
 // This Class will use NUnit testing on the IdentifiableObject class to
 // assist in the locating of potential bugs and anomalies
 

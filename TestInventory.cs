@@ -1,4 +1,4 @@
-﻿// Title:			4-2P - TestInventory.cs
+﻿// Title:			5-1C - TestInventory.cs
 // Author:			Andrew Colbeck © 2018, all rights reserved.
 // Version:			1.0
 // Description:		Unit Tests for Inventory Class in Swinadventure
@@ -48,7 +48,7 @@ namespace SwinAdventure
             Assert.AreEqual(expected, actual, "Item has been fetched and no longer exists in inventory.");
         }
 
-        [Test] // TAKE: Returns items it has, and the item is no longer in the inventory
+        [Test] // TAKE: Returns items it has, and the item remains in the inventory
         public void TestTakeItem()
         {
             Inventory testInventoryObject = new Inventory();
