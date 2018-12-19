@@ -13,14 +13,14 @@ namespace SwinAdventure
     {
         public static void Main(string[] args) 
         {
-
-            
+            // Print Introduction
             Console.WriteLine("Welcome to Swin-Adventure!");
             Console.WriteLine("What is your name?");
 
             // Save the User's input into the string variable called 'name':
             string _name = Console.ReadLine();
 
+            // Print Dialog
             Console.WriteLine("Welcome {0}!\n", _name);
             Console.WriteLine("How would you describe yourself, {0}?\n", _name);
 
@@ -44,21 +44,27 @@ namespace SwinAdventure
             
             Console.WriteLine("Welcome to Swin Adventure, {0}! ", _name);
             
-            // Game Loop
+            // Set Variables
             string command;
-            string[] commandArray = {"Look", "at", "me"};
+            string[] commandArray = {"Look", "at", "room"};
             LookCommand look = new LookCommand();
             
-            do
+            // Game Loop
+            while (true)
             {
                 Console.WriteLine("What would you like to look at?");
                 Console.Write("\nCommand --> ");
                 command = Console.ReadLine();
-
+                
+                if (command == "exit")
+                {
+                    break;
+                }
+                
                 commandArray = command.Split();
                 Console.WriteLine("{0}", look.Execute(player, commandArray)); 
                 
-            } while (command != "exit");
+            } 
         }
     }
 }

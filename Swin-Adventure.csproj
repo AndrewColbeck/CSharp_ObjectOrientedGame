@@ -53,6 +53,8 @@
     <Compile Include="TestItem.cs" />
     <Compile Include="TestLook.cs" />
     <Compile Include="TestPlayer.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="TestLocation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

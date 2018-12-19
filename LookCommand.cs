@@ -36,7 +36,13 @@ namespace SwinAdventure
                         if (commandsArray.Length == 3)
                         {
                             // Player is container
-                            return result = LookAtIn(commandsArray[2], p);
+                            result = LookAtIn(commandsArray[2], p);
+                            
+                            // If Item is not in Player, look in Player location:
+                            if (result == null)
+                            {
+                                result = LookAtIn(commandsArray[2], p.Location);
+                            }
                         }
                         
                         // Else command must be "look at item in container"

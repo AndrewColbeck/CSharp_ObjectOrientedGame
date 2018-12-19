@@ -10,8 +10,10 @@ namespace SwinAdventure
     public class Player : GameObject, IHaveInventory
     {
         // LOCAL VARIABLES:
-        Inventory _inventory = new Inventory();
+        private Inventory _inventory = new Inventory();
+        private Location _location = new Location("room", "Building");
 
+        
         // CONSTRUCTORS:
         public Player(string name, string desc) : base(new string[] { "me", "inventory" }, name, desc)
         {
@@ -20,17 +22,30 @@ namespace SwinAdventure
 
         // PROPERTIES:
         public Inventory Inventory { get => _inventory; }
+        public Location Location { get => _location; set => _location = value; }
         
         // METHODS:
         // RETURN GameObject if name matches passed string:
         public GameObject Locate(string id)
         {
+            // If Player is the item, return player
             if (AreYou(id))
             {
                 return this;
             }
-
-            return Inventory.Fetch(id);
+            else
+            {   // If item is in inventory, return item
+                if (Inventory.Fetch(id) != null)
+                {
+                    return Inventory.Fetch(id);
+                }
+                else
+                {
+                    // Else check Player's location, return item or null
+                    return Location.Locate(id);
+                }
+            }
+            
             
         }
         
@@ -42,6 +57,6 @@ namespace SwinAdventure
             {    
                 return "You are carrying\n" + Inventory.ItemList;
             }
-        }    
+        }
 	}
 }
