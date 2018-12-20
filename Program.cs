@@ -6,6 +6,7 @@
 // To Fix:          Complete!
 
 using System;
+using System.Collections.Generic;
 
 namespace SwinAdventure 
 {
@@ -13,6 +14,16 @@ namespace SwinAdventure
     {
         public static void Main(string[] args) 
         {
+			// Create List of Locations
+			List < Location > _locations = new List<Location>();
+            Location Bathroom = new Location("Bathroom", "Room in a house");
+            Location Study = new Location("Study", "Study nook");
+            Path Hallway = new Path(new string[] { "north", "Hallway in house" }, Bathroom);
+            Path Corridor = new Path(new string[] { "south", "Corridor leading south" }, Study);
+            _locations.Add(Bathroom);
+            _locations.Add(Study);
+            
+            
             // Print Introduction
             Console.WriteLine("Welcome to Swin-Adventure!");
             Console.WriteLine("What is your name?");
@@ -47,7 +58,8 @@ namespace SwinAdventure
             // Set Variables
             string command;
             string[] commandArray = {"Look", "at", "room"};
-            LookCommand look = new LookCommand();
+			//LookCommand look = new LookCommand();
+			CommandProcessor commandProcessor = new CommandProcessor(_locations);
             
             // Game Loop
             while (true)
@@ -61,8 +73,8 @@ namespace SwinAdventure
                     break;
                 }
                 
-                commandArray = command.Split();
-                Console.WriteLine("{0}", look.Execute(player, commandArray)); 
+                //commandArray = command.Split();
+                Console.WriteLine("{0}", commandProcessor.Execute(player, command)); 
                 
             } 
         }

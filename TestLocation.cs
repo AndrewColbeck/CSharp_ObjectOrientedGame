@@ -53,7 +53,6 @@ namespace SwinAdventure
 
             Assert.AreEqual(expected, actual, "Player not able to locate items in Player's location correctly.");
             
-            
         }
         
         

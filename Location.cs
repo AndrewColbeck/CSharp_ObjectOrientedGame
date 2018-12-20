@@ -7,6 +7,8 @@
 //
 //
 using System;
+using System.Collections.Generic;
+
 namespace SwinAdventure
 {
     public class Location: GameObject, IHaveInventory
@@ -14,7 +16,7 @@ namespace SwinAdventure
 
         // LOCAL VARIABLES:
         Inventory _inventory = new Inventory();
-
+		List<Path> _paths = new List<Path>();
         // CONSTRUCTORS:
         public Location(string name, string desc) : base(new string[] { "room", "location" }, name, desc)
         {
@@ -23,7 +25,7 @@ namespace SwinAdventure
 
         // PROPERTIES:
         public Inventory Inventory { get => _inventory; set => _inventory = value; }
-        
+        public List<Path> Paths { get => _paths; }      
         
         // METHODS:
         // RETURN GameObject if name matches passed string:
@@ -48,6 +50,33 @@ namespace SwinAdventure
             }
         }
 
+	
+		public void AddPath(Path p)
+        {
+			_paths.Add(p);
+        }
 
+        public void MovePlayer(Player player, string command)
+        {
+            foreach (Path p in _paths)
+            {
+                if (p.AreYou(command))
+                {
+					p.MovePlayer(player);
+                }
+            }
+        }
+        
+        public bool LocatePath (string command)
+        {
+            foreach (Path path in _paths)
+            {
+                if (path.AreYou(command))
+                {
+					return true;
+                }
+            }
+            return false;
+        }
 	}
 }
