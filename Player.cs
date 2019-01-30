@@ -59,6 +59,24 @@ namespace SwinAdventure
             }
         }
         
+        public GameObject Take(string id)
+        {
+            if (AreYou(id))
+            {
+				return null;
+            }
+			else
+            {
+				return _inventory.Take(id);
+            }
+        }
+        
+        public void Put (Item item)
+        {
+			_inventory.Put(item);
+        }
+        
+        
         
 	}
 }

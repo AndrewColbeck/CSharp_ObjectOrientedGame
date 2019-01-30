@@ -13,7 +13,8 @@ namespace SwinAdventure
     {
         // METHODS:
         GameObject Locate(string id);
-
+		GameObject Take(string id);
+        
         // PROPERTIES:
         string Name { get; }
     }

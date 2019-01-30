@@ -1,0 +1,6 @@
+Location, Bathroom, A Luxurious Bathroom fit for Royalty
+Location, Study, A gigantic Study for the academic types
+Path,north,Hallway, 0, 1
+Path,south,Hall, 1, 0
+
+

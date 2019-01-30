@@ -57,9 +57,12 @@
     <Compile Include="TestLocation.cs" />
     <Compile Include="Path.cs" />
     <Compile Include="MoveCommand.cs" />
-    <Compile Include="TestPath.cs" />
+    <Compile Include="TestMoveCommand.cs" />
     <Compile Include="CommandProcessor.cs" />
     <Compile Include="TestCommandProcessor.cs" />
+    <Compile Include="PutCommand.cs" />
+    <Compile Include="TakeCommand.cs" />
+    <Compile Include="InventoryCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

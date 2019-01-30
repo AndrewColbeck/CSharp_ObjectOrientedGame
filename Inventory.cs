@@ -56,7 +56,7 @@ namespace SwinAdventure
         {
             foreach (Item itm in _items)
             {
-                if (itm.Name == id)
+                if (itm.AreYou(id))
                 {
                     _items.Remove(itm);
                     return itm;

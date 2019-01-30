@@ -42,5 +42,30 @@ namespace SwinAdventure
                 return "In the " + this.Firstid + " you can see: " + Inventory.ItemList; 
             }
         }
+        
+        public GameObject Take(string id)
+        {
+            if (AreYou(id))
+            {
+                return this;
+            }
+
+            return Inventory.Take(id);
+            
+        }
+        //// Take an item from the Inventory:
+        //public GameObject Take(string id)
+        //{
+            //foreach (Item itm in Inventory)
+            //{
+            //    if (itm.Name == id)
+            //    {
+            //        _items.Remove(itm);
+            //        return itm;
+            //    }
+            //}
+            
+        //    return null;
+        //}
 	}
 }

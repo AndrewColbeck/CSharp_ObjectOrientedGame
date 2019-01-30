@@ -11,7 +11,7 @@ namespace SwinAdventure
     public class LookCommand : Command
     {
         // CONSTRUCTOR:
-        public LookCommand() : base (new string[] { "look", "command" })
+        public LookCommand() : base (new string[] { "look", "look at", "look at in" })
         {
             
         }
@@ -26,7 +26,7 @@ namespace SwinAdventure
             // Must be either "Look at <item>" OR "Look at <item> in <container>"
             if (commandsArray.Length == 3 || commandsArray.Length == 5)
             {
-                // Must begin with "Look"
+                // Must begin with LOWERCASE look or UPPERCASE Look
                 if (commandsArray[0] == "look" || commandsArray[0] == "Look")
                 {
                     // Second word must be "at"

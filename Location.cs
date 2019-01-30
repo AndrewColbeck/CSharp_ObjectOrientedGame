@@ -25,7 +25,7 @@ namespace SwinAdventure
 
         // PROPERTIES:
         public Inventory Inventory { get => _inventory; set => _inventory = value; }
-        public List<Path> Paths { get => _paths; }      
+        public List<Path> Paths { get => _paths; set => _paths = value; }      
         
         // METHODS:
         // RETURN GameObject if name matches passed string:
@@ -37,6 +37,17 @@ namespace SwinAdventure
             }
 
             return Inventory.Fetch(id);
+            
+        }
+
+        public GameObject Take(string id)
+        {
+            if (AreYou(id))
+            {
+                return this;
+            }
+
+            return Inventory.Take(id);
             
         }
 
