@@ -36,36 +36,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Bag.cs" />
-    <Compile Include="Command.cs" />
-    <Compile Include="GameObject.cs" />
-    <Compile Include="IdentifiableObject.cs" />
-    <Compile Include="IHaveInventory.cs" />
-    <Compile Include="Inventory.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="LookCommand.cs" />
-    <Compile Include="Player.cs" />
-    <Compile Include="TestBag.cs" />
-    <Compile Include="TestIdentifiableObject.cs" />
-    <Compile Include="TestInventory.cs" />
-    <Compile Include="TestItem.cs" />
-    <Compile Include="TestLook.cs" />
-    <Compile Include="TestPlayer.cs" />
-    <Compile Include="Location.cs" />
-    <Compile Include="TestLocation.cs" />
-    <Compile Include="Path.cs" />
-    <Compile Include="MoveCommand.cs" />
-    <Compile Include="TestMoveCommand.cs" />
-    <Compile Include="CommandProcessor.cs" />
-    <Compile Include="TestCommandProcessor.cs" />
-    <Compile Include="PutCommand.cs" />
-    <Compile Include="TakeCommand.cs" />
-    <Compile Include="InventoryCommand.cs" />
+    <Compile Include="Tests\TestBag.cs" />
+    <Compile Include="Tests\TestCommandProcessor.cs" />
+    <Compile Include="Tests\TestIdentifiableObject.cs" />
+    <Compile Include="Tests\TestInventory.cs" />
+    <Compile Include="Tests\TestItem.cs" />
+    <Compile Include="Tests\TestLocation.cs" />
+    <Compile Include="Tests\TestLook.cs" />
+    <Compile Include="Tests\TestMoveCommand.cs" />
+    <Compile Include="Tests\TestPlayer.cs" />
+    <Compile Include="src\Program.cs" />
+    <Compile Include="src\Objects\Bag.cs" />
+    <Compile Include="src\Objects\GameObject.cs" />
+    <Compile Include="src\Objects\IdentifiableObject.cs" />
+    <Compile Include="src\Objects\IHaveInventory.cs" />
+    <Compile Include="src\Objects\Inventory.cs" />
+    <Compile Include="src\Objects\Item.cs" />
+    <Compile Include="src\Objects\Player.cs" />
+    <Compile Include="src\Locations\Location.cs" />
+    <Compile Include="src\Locations\Path.cs" />
+    <Compile Include="src\Commands\Command.cs" />
+    <Compile Include="src\Commands\CommandProcessor.cs" />
+    <Compile Include="src\Commands\InventoryCommand.cs" />
+    <Compile Include="src\Commands\LookCommand.cs" />
+    <Compile Include="src\Commands\MoveCommand.cs" />
+    <Compile Include="src\Commands\PutCommand.cs" />
+    <Compile Include="src\Commands\TakeCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tests\" />
+    <Folder Include="src\" />
+    <Folder Include="src\Objects\" />
+    <Folder Include="src\Locations\" />
+    <Folder Include="src\Commands\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

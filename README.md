@@ -9,7 +9,11 @@ This Program makes use of a Maze.txt file to create custom rooms, paths and item
 ### Instructions:
 In its current state the game will run in a terminal window, open the solution and build to see output.
 
-### To Do:
--A GUI & .dll have been created but need work.<br>
--Add graphics and apply narrative.
-<br><br>Andrew Colbeck © 2018
+<br><br>
+Andrew Colbeck © 2018<br>
+B.Sc. Computer Science, B.A. Audio Engineering (Hons)    <br>
+follow: 
+[<img src="https://gdurl.com/vYH5">](https://github.com/AndrewColbeck)
+[<img src="https://gdurl.com/xpGoe">](https://www.facebook.com/andrewtcolbeck)
+[<img src="https://gdurl.com/FGea">](https://www.youtube.com/channel/UCG9CXPHtEN6zEz-KmLGFT2A)
+[<img src="https://gdurl.com/f8fuk">](https://www.linkedin.com/in/andrewcolbeck)
